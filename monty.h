@@ -36,3 +36,23 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+/*check files*/
+FILE *check_file(int argc, char *argv[])
+/*instructions*/
+void _push(stack_t **stack, unsigned int a);
+void _pall(stack_t **stack, unsigned int a);
+void _pint(stack_t **stack, unsigned int li);
+void _pop(stack_t **stack, unsigned int li);
+void _swap(stack_t **stack, unsigned int li);
+void _queue(stack_t **stack, unsigned int li);
+void _stack(stack_t **stack, unsigned int li);
+void _add(stack_t **stack, unsigned int li);
+void _nop(stack_t **stack, unsigned int li);
+void _mul(stack_t **stack, unsigned int li);
+void _div(stack_t **stack, unsigned int li);
+void _mod(stack_t **stack, unsigned int li);
+void _pchar(stack_t **stack, unsigned int li);
+void _pstr(stack_t **stack, unsigned int li);
+void _rotl(stack_t **stack, unsigned int li);
+void _rotr(stack_t **stack, unsigned int li);
+
